@@ -50,14 +50,14 @@ public partial class Default2 : System.Web.UI.Page
         SmtpClient smtp = new SmtpClient();
         smtp.Host = "smtp.gmail.com";
         smtp.Port = 587;
-        smtp.Credentials = new System.Net.NetworkCredential("sumayya.kareem6@gmail.com", "winnie$123#");
+        smtp.Credentials = new System.Net.NetworkCredential("myusername@gmail.com", "mypassword");
         smtp.EnableSsl = true;
         MailMessage msg = new MailMessage();
         msg.Subject = "Forgot Password ( The Hijab Store)";
         msg.Body = "Dear " + TextBox1.Text + ", Your Password is  " + password + "\n\n\nThanks & Regards\nThe Hijab Store Team";
         string toaddress = TextBox2.Text;
         msg.To.Add(toaddress);
-        string fromaddress = "The Hijab Store <sumayya.kareem6@gmail.com>";
+        string fromaddress = "The Hijab Store <myusername@gmail.com>";
         msg.From = new MailAddress(fromaddress);
         try
         {
