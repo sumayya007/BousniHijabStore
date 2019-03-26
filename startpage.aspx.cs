@@ -64,14 +64,14 @@ public partial class startpage : System.Web.UI.Page
         SmtpClient smtp = new SmtpClient();
         smtp.Host = "smtp.gmail.com";
         smtp.Port = 587;
-        smtp.Credentials = new System.Net.NetworkCredential("sumayya.kareem6@gmail.com", "winnie$123#");
+        smtp.Credentials = new System.Net.NetworkCredential("myusername@gmail.com", "mypassword");
         smtp.EnableSsl = true;
         MailMessage msg = new MailMessage();
         msg.Subject = "Hello Subscriber ( The Hijab Store)";
         msg.Body = "Dear , Your Password is \n\n\nThanks & Regards\nThe Hijab Store Team";
         string toaddress = TextBox1.Text;
         msg.To.Add(toaddress);
-        string fromaddress = "The Hijab Store <sumayya.kareem6@gmail.com>";
+        string fromaddress = "The Hijab Store <myusername@gmail.com>";
         msg.From = new MailAddress(fromaddress);
         try
         {
@@ -93,7 +93,7 @@ public partial class startpage : System.Web.UI.Page
             MailMessage mail = new MailMessage();
             mail.To.Add(email);
            // mail.To.Add("xxx@gmail.com");
-            mail.From = new MailAddress("sumayya.kareem6@gmail.com");
+            mail.From = new MailAddress("myusername@gmail.com");
             mail.Subject = "sub";
 
             mail.Body = "Dear , Your Password is \n\n\nThanks & Regards\nThe Hijab Store Team";
@@ -102,7 +102,7 @@ public partial class startpage : System.Web.UI.Page
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com"; //Or Your SMTP Server Address
             smtp.Credentials = new System.Net.NetworkCredential
-                 ("sumayya.kareem6@gmail.com", "winnie$123#"); // ***use valid credentials***
+                 ("myusername@gmail.com", "mypassword"); // ***use valid credentials***
             smtp.Port = 587;
 
             //Or your Smtp Email ID and Password
