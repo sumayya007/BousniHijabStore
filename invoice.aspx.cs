@@ -123,7 +123,7 @@ public partial class Default2 : System.Web.UI.Page
 
 
 
-    protected void Qr_Click(object sender, EventArgs e)
+    /*protected void Qr_Click(object sender, EventArgs e)
     {
         string code = websiteurl.Text;
         QRCodeGenerator qrGenerator = new QRCodeGenerator();
@@ -142,7 +142,7 @@ public partial class Default2 : System.Web.UI.Page
             PlaceHolder1.Controls.Add(imgBarCode);
         }
         Label11.Visible = true;
-    }
+    }*/
 
 
 
