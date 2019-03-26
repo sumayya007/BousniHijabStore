@@ -18,12 +18,7 @@
                     <div class="box">
                         <div class="row">
                             <div class="col-md-9 table table-responsive">
-                                Enter Website URl to generate QRcode in invoice bill:<asp:textbox runat="server" id="websiteurl"></asp:textbox>
-                                <asp:button runat="server" text="Generate QR Code" id="Qr" OnClick="Qr_Click"  />
-                                &nbsp;
-                                                        <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
-                                <br />
-                                <asp:Label ID="Label11" runat="server" ForeColor="Red" Text="Copy and paste the QR image wherever required.." Visible="False"></asp:Label>
+                                
                                 <br />
                                 <br />
                                  <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Horizontal" OnSelectedIndexChanged="GridView2_SelectedIndexChanged" Height="475px" Width="100%">
