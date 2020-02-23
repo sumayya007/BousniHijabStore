@@ -1,0 +1,3 @@
+# BousniHijabStore
+E-commerce Shopping Website
+I have developed an Online shopping store in Asp.net in C#, where users can select items and save them in their wish list, as well as add them to their cart to make payment. There is also admin dashboard where admin can view customer’s details, add/edit product details as well as add/edit product categories. Also Admin can send live notification in the website, as well as send mail to the registered customers. Admin can also manage discount to various products. Admin also has the facility to view the number of visitors to the site. I have used Visual Studio for development. The Database is managed by using Sql server 2008.
